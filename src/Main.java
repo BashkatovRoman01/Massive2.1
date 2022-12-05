@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Random;
 
+import static com.sun.tools.classfile.Module_attribute.ProvidesEntry.length;
+
 public class Main {
     public static void main(String[] args) {
         int[] array = arrayRandom(30);
@@ -9,7 +11,7 @@ public class Main {
         for (int number : array) {
             sum += number;
         }
-        System.out.println(sum);
+        System.out.println(" Сумма расходов в месяц составила " + sum);
         // Найти максимальный и минимальный расход
         int min = array[0];
         int max = array[0];
@@ -22,8 +24,18 @@ public class Main {
             }
         }
         System.out.println(" Минимальное значение = " + min + "; Максимальное зщанчение = " + max);
-        {
-            public static int[] arrayRandom(int length){
+        // Найти средний расход
+        System.out.println("Средний расход за месяц составил " + sum / array.length);
+        // Вывести "Иван Иванович Иванов" в обратном порядке
+        String string = "Иван Иванович Иванов";
+        char [] stringToChar = string.toCharArray();
+        System.out.println(Arrays.toString(stringToChar));
+        for (int i = stringToChar.length-1; i >=0 ; i--) {
+            System.out.println(stringToChar[i]);
+        }
+    }
+
+            public static int[] arrayRandom(int length);{
             Random random = new Random();
             int[] array = new int[length];
             for (int i = 0; i < length; i++) {
@@ -31,7 +43,6 @@ public class Main {
             }
             return array;
         }
-        }
     }
-}
+
 
