@@ -1,7 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
 
-import static com.sun.tools.classfile.Module_attribute.ProvidesEntry.length;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,7 +34,7 @@ public class Main {
         }
     }
 
-            public static int[] arrayRandom(int length);{
+            public static int[] arrayRandom(int length){
             Random random = new Random();
             int[] array = new int[length];
             for (int i = 0; i < length; i++) {
